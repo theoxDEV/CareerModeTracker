@@ -1,0 +1,70 @@
+﻿.player-details {
+    width: 100%;
+    max-width: 600px;
+    height: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.top-left {
+    display: flex;
+    align-items: center;
+}
+
+    .top-left img {
+        width: 40px;
+        height: 40px;
+    }
+
+.bottom-left {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+}
+
+    .bottom-left .first-name {
+        font-size: medium;
+    }
+
+    .bottom-left .last-name {
+        font-size: xx-large;
+        font-weight: bold;
+    }
+
+.right-side {
+    position: relative;
+    width: 200px;
+    height: 310px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+    .right-side .number {
+        font-size: 200px;
+        opacity: 0.1;
+        position: absolute;
+        z-index: 1;
+        bottom: 0;
+    }
+
+    .right-side img {
+        width: 100%; /* Adjusted to fill the width of the container */
+        height: auto; /* Allow the height to adjust proportionally */
+        z-index: 2;
+        position: absolute;
+        bottom: 0;
+        left: 0; /* Align to the left */
+    }

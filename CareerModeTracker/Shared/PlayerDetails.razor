@@ -1,0 +1,31 @@
+﻿<div class="player-details">
+    <div class="left-side">
+        <div class="top-left">
+            <img src="@club" alt="Team">
+            <img src="@nation" alt="Nationality">
+        </div>
+        <div class="bottom-left">
+            <span class="first-name">@player_firstName</span>
+            <span class="last-name">@player_lastName</span>
+        </div>
+    </div>
+    <div class="right-side">
+        <span class="number">11</span>
+        <img src="@player_photo" alt="Player Photo">
+    </div>
+</div>
+
+@code {
+    string dir = $"{System.IO.Directory.GetCurrentDirectory()}{@"\Resources\Images"}";
+
+    string image = "/dotnet_bot.svg";
+
+    string player_photo = "https://cdn.futwiz.com/assets/img/fc24/faces/50369224.png";
+
+    string player_firstName = "Ronaldo";
+    string player_lastName = "Nazário";
+
+    string nation = "https://cdn-icons-png.flaticon.com/512/206/206597.png";
+
+    string club = "https://cdn.icon-icons.com/icons2/1637/PNG/256/real-madrid_109486.png";
+}
